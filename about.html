@@ -162,15 +162,25 @@
             </div>
             <!-- About End -->
             <style>
-                .fact-text h2,
-.fact-text span{
-    display: inline-block;
-    font-size: 40px;
-    font-weight: 700;
+               
+html, body{
+    overflow-x: hidden;
+    max-width: 100%;
 }
+.fact-text h2{
+    font-size: 18px !important;
+}
+@media (max-width: 768px){
+    .fact .container-fluid{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
-.fact-text span{
-    margin-left: 2px;
+    .fact-left,
+    .fact-right{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
             </style>
             <!-- Vision & Mission Start -->
@@ -208,56 +218,65 @@
             </div>
             <!-- Vision & Mission End -->
              <!-- Fact Start -->
-            <div class="fact">
-                <div class="container-fluid">
-                    <div class="row counters">
-                        <div class="col-md-6 fact-left wow slideInLeft">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="fact-icon">
-                                        <i class="flaticon-worker"></i>
-                                    </div>
-                                    <div class="fact-text">
-                                        <h2 data-toggle="counter-up">100</h2><span>+</span>
-                                        <p>Expert Workers</p>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="fact-icon">
-                                        <i class="flaticon-building"></i>
-                                    </div>
-                                    <div class="fact-text">
-                                        <h2 data-toggle="counter-up">500</h2><span>+</span>
-                                        <p>Happy Clients</p>
-                                    </div>
-                                </div>
-                            </div>
+             <div class="fact">
+    <div class="container-fluid">
+        <div class="row counters">
+
+            <div class="col-md-6 fact-left wow slideInLeft">
+                <div class="row">
+
+                    <div class="col-6">
+                        <div class="fact-icon">
+                            <i class="flaticon-worker"></i>
                         </div>
-                        <div class="col-md-6 fact-right wow slideInRight">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="fact-icon">
-                                        <i class="flaticon-address"></i>
-                                    </div>
-                                    <div class="fact-text">
-                                        <h2 data-toggle="counter-up">500</h2><span>+</span>
-                                        <p>Completed Projects</p>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="fact-icon">
-                                        <i class="flaticon-crane"></i>
-                                    </div>
-                                    <div class="fact-text">
-                                        <h2 data-toggle="counter-up">80</h2><span>+</span>
-                                        <p>Running Projects</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="fact-text">
+                            <h2>Trusted</h2>
+                            <p>Construction Support</p>
                         </div>
                     </div>
+
+                    <div class="col-6">
+                        <div class="fact-icon">
+                            <i class="flaticon-building"></i>
+                        </div>
+                        <div class="fact-text">
+                            <h2>Quality</h2>
+                            <p>Workmanship Standards</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
+            <div class="col-md-6 fact-right wow slideInRight">
+                <div class="row">
+
+                    <div class="col-6">
+                        <div class="fact-icon">
+                            <i class="flaticon-address"></i>
+                        </div>
+                        <div class="fact-text">
+                            <h2>Reliable</h2>
+                            <p>Project Coordination</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="fact-icon">
+                            <i class="flaticon-crane"></i>
+                        </div>
+                        <div class="fact-text">
+                            <h2>Safe</h2>
+                            <p>Site Execution</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
             <!-- Fact End -->
             <!-- HSE Policy Start -->
             <div class="hse-policy wow fadeInUp" data-wow-delay="0.1s">

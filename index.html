@@ -36,7 +36,7 @@
                         <div class="col-lg-4 col-md-12">
                             <div class="logo">
                                 <a href="index.html">
-                                    <img src="img/logo optivex.png" alt="Optivex Trading and Contracting" style="max-height: 70px;">
+                                    <img loading="lazy" src="img/logo optivex.png" alt="Optivex Trading and Contracting" style="max-height: 70px;">
                                 </a>
                             </div>
                         </div>
@@ -114,7 +114,7 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/opt8.webp" alt="Carousel Image">
+                        <img loading="lazy" src="img/opt8.webp" alt="Carousel Image">
                         <div class="carousel-caption">
                             <p class="animated fadeInRight">OPTIVEX TRADING & CONTRACTING</p>
                             <h1 class="animated fadeInLeft">We Build Strong Foundations</h1>
@@ -122,7 +122,7 @@
                     </div>
 
                     <div class="carousel-item">
-                        <img src="img/opt9.png" alt="Carousel Image">
+                        <img loading="lazy" src="img/opt9.png" alt="Carousel Image">
                         <div class="carousel-caption">
                             <p class="animated fadeInRight">Professional Builder</p>
                             <h1 class="animated fadeInLeft">Building Dreams With Quality & Trust</h1>
@@ -131,7 +131,7 @@
                     </div>
 
                     <div class="carousel-item">
-                        <img src="img/carousel-3.jpg" alt="Carousel Image">
+                        <img loading="lazy" src="img/carousel-3.jpg" alt="Carousel Image">
                         <div class="carousel-caption">
                             <p class="animated fadeInRight">We Are Trusted</p>
                             <h1 class="animated fadeInLeft">We Deliver Quality</h1>
@@ -323,23 +323,14 @@
 .info-item strong {
     color: #111;
 }
-.fact-text h2,
-.fact-text span{
-    display: inline-block;
-    font-size: 40px;
-    font-weight: 700;
-}
 
-.fact-text span{
-    margin-left: 2px;
-}
 </style>
 
 <div class="about-section">
     <div class="about-wrapper">
 
         <div class="about-image">
-            <img src="img/about.jpg" alt="Optivex Trading & Contracting">
+            <img loading="lazy" src="img/about.jpg" alt="Optivex Trading & Contracting">
         </div>
 
         <div class="about-content">
@@ -392,55 +383,82 @@
 
             <!-- Fact Start -->
             <div class="fact">
-                <div class="container-fluid">
-                    <div class="row counters">
-                        <div class="col-md-6 fact-left wow slideInLeft">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="fact-icon">
-                                        <i class="flaticon-worker"></i>
-                                    </div>
-                                    <div class="fact-text">
-                                        <h2 data-toggle="counter-up">100</h2><span>+</span>
-                                        <p>Expert Workers</p>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="fact-icon">
-                                        <i class="flaticon-building"></i>
-                                    </div>
-                                    <div class="fact-text">
-                                        <h2 data-toggle="counter-up">500</h2><span>+</span>
-                                        <p>Happy Clients</p>
-                                    </div>
-                                </div>
-                            </div>
+    <div class="container-fluid">
+        <div class="row counters">
+
+            <div class="col-md-6 fact-left wow slideInLeft">
+                <div class="row">
+
+                    <div class="col-6">
+                        <div class="fact-icon">
+                            <i class="flaticon-worker"></i>
                         </div>
-                        <div class="col-md-6 fact-right wow slideInRight">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="fact-icon">
-                                        <i class="flaticon-address"></i>
-                                    </div>
-                                    <div class="fact-text">
-                                        <h2 data-toggle="counter-up">500</h2><span>+</span>
-                                        <p>Completed Projects</p>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="fact-icon">
-                                        <i class="flaticon-crane"></i>
-                                    </div>
-                                    <div class="fact-text">
-                                        <h2 data-toggle="counter-up">80</h2><span>+</span>
-                                        <p>Running Projects</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="fact-text">
+                            <h2>Trusted</h2>
+                            <p>Construction Support</p>
                         </div>
                     </div>
+
+                    <div class="col-6">
+                        <div class="fact-icon">
+                            <i class="flaticon-building"></i>
+                        </div>
+                        <div class="fact-text">
+                            <h2>Quality</h2>
+                            <p>Workmanship Standards</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
+            <div class="col-md-6 fact-right wow slideInRight">
+                <div class="row">
+
+                    <div class="col-6">
+                        <div class="fact-icon">
+                            <i class="flaticon-address"></i>
+                        </div>
+                        <div class="fact-text">
+                            <h2>Reliable</h2>
+                            <p>Project Coordination</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="fact-icon">
+                            <i class="flaticon-crane"></i>
+                        </div>
+                        <div class="fact-text">
+                            <h2>Safe</h2>
+                            <p>Site Execution</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<style>
+.fact-text h2{
+    font-size: 18px !important;
+}
+@media (max-width: 768px){
+    .fact .container-fluid{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .fact-left,
+    .fact-right{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+</style>
+
             <!-- Fact End -->
 <div class="blog">
     <div class="container">
@@ -457,7 +475,7 @@
                 <div class="blog-item">
 
                     <div class="blog-img">
-                        <img src="img/service-1.jpg" alt="Civil & Building Construction">
+                        <img loading="lazy" src="img/service-1.jpg" alt="Civil & Building Construction">
                     </div>
 
                     <div class="blog-title service-title">
@@ -484,7 +502,7 @@
                 <div class="blog-item">
 
                     <div class="blog-img">
-                        <img src="img/opt1.jpeg" alt="Building Material Supply">
+                        <img loading="lazy" src="img/opt1.jpeg" alt="Building Material Supply">
                     </div>
 
                     <div class="blog-title service-title">
@@ -518,7 +536,7 @@
                 <div class="blog-item">
 
                     <div class="blog-img">
-                        <img src="img/opt2.webp" alt="Painting Services">
+                        <img loading="lazy" src="img/opt2.webp" alt="Painting Services">
                     </div>
 
                     <div class="blog-title service-title">
@@ -545,7 +563,7 @@
                 <div class="blog-item">
 
                     <div class="blog-img">
-                        <img src="img/opt3.jpg" alt="Interlock Installation">
+                        <img loading="lazy" src="img/opt3.jpg" alt="Interlock Installation">
                     </div>
 
                     <div class="blog-title service-title">
@@ -572,7 +590,7 @@
                 <div class="blog-item">
 
                     <div class="blog-img">
-                        <img src="img/opt4.webp" alt="Kerbstone Works">
+                        <img loading="lazy" src="img/opt4.webp" alt="Kerbstone Works">
                     </div>
 
                     <div class="blog-title service-title">
@@ -599,7 +617,7 @@
                 <div class="blog-item">
 
                     <div class="blog-img">
-                        <img src="img/opt5.webp" alt="Cycle Track Works">
+                        <img loading="lazy" src="img/opt5.webp" alt="Cycle Track Works">
                     </div>
 
                     <div class="blog-title service-title">
@@ -651,7 +669,7 @@
                     </div>
                 </div>
 
-                <div class="card wow fadeInLeft" data-wow-delay="0.3s">
+                <div class="card wow fadeInLeft" data-wow-delay="0.1s">
                     <div class="card-header">
                         🛠️ Tools, equipment and materials shall be handled safely
                         and kept in designated areas to avoid hazards.
@@ -857,7 +875,7 @@
                 <div class="service-item">
 
                     <div class="service-img">
-                        <img src="img/optivex2.webp" alt="Landscape Hardscape">
+                        <img loading="lazy" src="img/optivex2.webp" alt="Landscape Hardscape">
 
                         <div class="service-overlay">
                             <p>
@@ -877,7 +895,7 @@
                 <div class="service-item">
 
                     <div class="service-img">
-                        <img src="img/optvex1.jpg" alt="Cycle Track & Pavement">
+                        <img loading="lazy" src="img/optvex1.jpg" alt="Cycle Track & Pavement">
 
                         <div class="service-overlay">
                             <p>
@@ -896,7 +914,7 @@
                 <div class="service-item">
 
                     <div class="service-img">
-                        <img src="img/optivex3.jpg" alt="Walkway & Footpath">
+                        <img loading="lazy" src="img/optivex3.jpg" alt="Walkway & Footpath">
 
                         <div class="service-overlay">
                             <p>
@@ -917,7 +935,7 @@
                 <div class="service-item">
 
                     <div class="service-img">
-                        <img src="img/opt12.jpg" alt="Interlock Installation">
+                        <img loading="lazy" src="img/opt12.jpg" alt="Interlock Installation">
 
                         <div class="service-overlay">
                             <p>
@@ -938,7 +956,7 @@
                 <div class="service-item">
 
                     <div class="service-img">
-                        <img src="img/service-2.jpg" alt="Building Construction">
+                        <img loading="lazy" src="img/service-2.jpg" alt="Building Construction">
 
                         <div class="service-overlay">
                             <p>
@@ -954,7 +972,25 @@
 
                 </div>
             </div>
+<div class="col-lg-4 col-md-6 mb-4 wow fadeInUp">
+                <div class="service-item">
 
+                    <div class="service-img">
+                        <img loading="lazy" src="img/optivex4.jfif" alt="Building Construction">
+
+                        <div class="service-overlay">
+                            <p>
+                                Supply of quality construction materials and reliable trading support services.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="service-text">
+                        <h3>Trading Services</h3>
+                    </div>
+
+                </div>
+            </div>
             <!-- ITEM 3 -->
             
 
@@ -1190,7 +1226,7 @@
                         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="img/team-1.jpg" alt="Team Image">
+                                    <img loading="lazy" src="img/team-1.jpg" alt="Team Image">
                                 </div>
                                 <div class="team-text">
                                     <h2>Adam Phillips</h2>
@@ -1207,7 +1243,7 @@
                         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="img/team-2.jpg" alt="Team Image">
+                                    <img loading="lazy" src="img/team-2.jpg" alt="Team Image">
                                 </div>
                                 <div class="team-text">
                                     <h2>Dylan Adams</h2>
@@ -1224,7 +1260,7 @@
                         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="img/team-3.jpg" alt="Team Image">
+                                    <img loading="lazy" src="img/team-3.jpg" alt="Team Image">
                                 </div>
                                 <div class="team-text">
                                     <h2>Jhon Doe</h2>
@@ -1241,7 +1277,7 @@
                         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="img/team-4.jpg" alt="Team Image">
+                                    <img loading="lazy" src="img/team-4.jpg" alt="Team Image">
                                 </div>
                                 <div class="team-text">
                                     <h2>Josh Dunn</h2>
@@ -1436,7 +1472,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                             <div class="blog-item">
                                 <div class="blog-img">
-                                    <img src="img/blog-1.jpg" alt="Image">
+                                    <img loading="lazy" src="img/blog-1.jpg" alt="Image">
                                 </div>
                                 <div class="blog-title">
                                     <h3>Lorem ipsum dolor sit</h3>
@@ -1456,7 +1492,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp">
                             <div class="blog-item">
                                 <div class="blog-img">
-                                    <img src="img/blog-2.jpg" alt="Image">
+                                    <img loading="lazy" src="img/blog-2.jpg" alt="Image">
                                 </div>
                                 <div class="blog-title">
                                     <h3>Lorem ipsum dolor sit</h3>
@@ -1476,7 +1512,7 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                             <div class="blog-item">
                                 <div class="blog-img">
-                                    <img src="img/blog-3.jpg" alt="Image">
+                                    <img loading="lazy" src="img/blog-3.jpg" alt="Image">
                                 </div>
                                 <div class="blog-title">
                                     <h3>Lorem ipsum dolor sit</h3>

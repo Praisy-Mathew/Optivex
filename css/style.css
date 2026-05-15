@@ -1,11 +1,18 @@
 /*******************************/
 /********* General CSS *********/
 /*******************************/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: #666666;
     background: #dddddd;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -156,7 +163,8 @@ a:focus {
 .nav-bar {
     position: relative;
     background: #fdbe33;
-    transition: .3s;
+    transition: transform .3s ease-out;
+    will-change: transform;
 }
 
 .nav-bar .container-fluid {
@@ -2417,4 +2425,13 @@ a:focus {
     color: #ffffff;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 30px;
+}
+.wow {
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+}
+
+.service-item, .portfolio-item, .blog-item {
+    will-change: transform;
+    backface-visibility: hidden;
 }
